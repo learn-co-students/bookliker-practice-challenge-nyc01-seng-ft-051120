@@ -28,8 +28,8 @@ document.addEventListener("DOMContentLoaded", function() {
                
                     fetch (booksURL+`/${bookId}`)
                     .then(r => r.json())
-                    .then(book => patchBookUsers(book))
-                    // location.reload()
+                    .then(book => toggleLikeBookUsers(book))
+                    
                         
                 }   
             })  
@@ -39,23 +39,38 @@ document.addEventListener("DOMContentLoaded", function() {
 const fetchSpecificBook = specificBook => {
     fetch(booksURL+`/${specificBook}`)
     .then(r => r.json())
-    .then(book => getUsers(book)) 
+    .then(book => renderBook(book)) 
 }
 
-const patchBookUsers = book => {
-        let myUser = {id:1, username: "pouros"}  
-            fetch(booksURL+`/${book.id}`,{
-                method:'PATCH', 
-                headers: {
-                    "content-type": "application/json"
-                },
-                body: JSON.stringify(
-                    {users: [...book.users, myUser]}
-                )
-                })
+const toggleLikeBookUsers = book => {
+        let myUser = {id:1, username: "pouros"}; 
+        let updatedUsers
+        // conditional for users array
+        if (book.users.find(user => user.id === 1)){
+            console.log("true")
+            // remove self from users
+            updatedUsers = book.users.filter(user => user.id != 1)
+        } else { 
+            // add me to users
+            updatedUsers = [...book.users, myUser];            
+        }
+
+        let updatedBook = book;
+        updatedBook.users = updatedUsers
+
+        fetch(booksURL+`/${book.id}`,{
+            method:'PATCH', 
+            headers: {
+                "content-type": "application/json"
+            },
+            body: JSON.stringify({users: updatedUsers})
+            })
+        .then(console.log(updatedBook) || renderBook(updatedBook))
+        
+                
 }
 
-const getUsers = (book) => {
+const renderBook= (book) => {
     let users = book.users.map(user => {
         return `<p class='user'>${user.username}</p>`
     })
@@ -67,6 +82,8 @@ const getUsers = (book) => {
         <button id='${book.id}'>Read Book</button>
         `
     }
+
+
  
 fetchBooks();
 });
