@@ -5,16 +5,7 @@
       "title": "Picture Perfect",
       "description": "When her seven-year-old nephew, a hemophiliac, mysteriously disappears during their camping trip, pediatrician Lorrie Ryan races against time to find the missing boy with the help of FBI agent Stuart Saunders. Previously published as Panda Bear Is Critical. Reprint.",
       "img_url": "http://books.google.com/books/content?id=CEMZ1OoPDIAC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "users": [
-        {
-          "id": 2,
-          "username": "auer"
-        },
-        {
-          "id": 8,
-          "username": "goodwin"
-        }
-      ]
+      "users": "users"
     },
     {
       "id": 2,
@@ -57,16 +48,7 @@
       "title": "The Kill",
       "description": "When the man she had helped convict of the rape and murder of her sister is set free because of exculpatory evidence, FBI scientist Olivia St. Martin launches her own investigation to uncover the truth about the case, only to discover that a brutal serial killer has been at large for years and, posing as a field agent, joins forces with Seattle detective Zack Travis to stop the monster. Original.",
       "img_url": "http://books.google.com/books/content?id=S3yODQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "users": [
-        {
-          "id": 10,
-          "username": "macejkovic"
-        },
-        {
-          "id": 8,
-          "username": "goodwin"
-        }
-      ]
+      "users": "users"
     },
     {
       "id": 5,
@@ -109,16 +91,7 @@
       "title": "Iron Lake",
       "description": "Includes excerpt of Heaven's Keep by William Kent Krueger (p. [439-447]).",
       "img_url": "http://books.google.com/books/content?id=nSEVSnb8wpUC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "users": [
-        {
-          "id": 3,
-          "username": "marvin"
-        },
-        {
-          "id": 5,
-          "username": "king"
-        }
-      ]
+      "users": "users"
     },
     {
       "id": 8,
@@ -147,16 +120,8 @@
       "img_url": "http://books.google.com/books/content?id=hmbACwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
       "users": [
         {
-          "id": 8,
-          "username": "goodwin"
-        },
-        {
-          "id": 6,
-          "username": "steuber"
-        },
-        {
-          "id": 5,
-          "username": "king"
+          "id": 1,
+          "username": "auer"
         }
       ]
     },
@@ -165,16 +130,7 @@
       "title": "The Lottery Winner",
       "description": "Five short tales, including 'Plumbing for Willy' and 'Death on the Cape,' follow the adventures of a former cleaning woman and her occasionally befuddled mate",
       "img_url": "http://books.google.com/books/content?id=dK5Gx6vbV2YC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "users": [
-        {
-          "id": 8,
-          "username": "goodwin"
-        },
-        {
-          "id": 10,
-          "username": "macejkovic"
-        }
-      ]
+      "users": "users"
     }
   ],
   "users": [
